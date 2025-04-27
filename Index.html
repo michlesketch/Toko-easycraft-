@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Easy.css">
+  <title>Toko Bunga easycraft</title>
+</head>
+<body>
+  <div class="header">
+    <img src="es.jpg" alt="Logo" class="logo" />
+    <h1>Toko Bunga EasyCraft</h1>
+    <p>Pesan bucket, wedding flower, dan gift box spesial!</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-target="bouquet">Bucket</button>
+    <button class="tab" data-target="wedding">Wedding</button>
+    <button class="tab" data-target="giftbox">Gift Box</button>
+  </div>
+
+  <div class="products">
+    <div class="tab-content active" id="bouquet">
+      <div class="card">
+        <img src="bk13.jpg" alt="Romantis Merah">
+        <h3>bucket wisuda</h3>
+        <p>Rp150.000</p>
+        <a href="https://wa.me/6283871448825?text=Halo%20saya%20ingin%20pesan%20*Romantis%20Merah*%20seperti%20gambar%20ini:%20https://example.com/bunga-romantis.jpg" target="_blank">Pesan Sekarang</a>
+      </div>
+      <div class="card">
+        <img src="bk14.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+            <div class="card">
+        <img src="bk10.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+       <div class="card">
+        <img src="bk9.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+      <div class="card">
+        <img src="bk3.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+      <div class="card">
+        <img src="bk7.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+      <div class="card">
+        <img src="bk11.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+      <div class="card">
+        <img src="bk12.jpg" alt="Pink Ceria">
+        <h3>Pink Ceria</h3>
+        <p>Rp170.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+
+    </div>
+
+    <div class="tab-content" id="wedding">
+      <div class="card">
+        <img src="basis.jpg" alt="Elegant White">
+        <h3>contoh</h3>
+        <p>nga di jual soalnya barang langka</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="giftbox">
+      <div class="card">
+        <img src="bk1.jpg" alt="Sweet Gift">
+        <h3>Sweet Gift</h3>
+        <p>Rp200.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+            <div class="card">
+        <img src="bk8.jpg" alt="Sweet Gift">
+        <h3>Sweet Gift</h3>
+        <p>Rp200.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+                  <div class="card">
+        <img src="bk4.jpg" alt="Sweet Gift">
+        <h3>Sweet Gift</h3>
+        <p>Rp200.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+
+             <div class="card">
+        <img src="bk2.jpg" alt="Sweet Gift">
+        <h3>Sweet Gift</h3>
+        <p>Rp200.000</p>
+        <a href="https://wa.me/6283871448825">Pesan Sekarang</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

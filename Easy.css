@@ -1,0 +1,145 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffeef4;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(135deg, #fcb6d0, #f980b8);
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.tab {
+  background: #f99dc2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+  background: #f268a7;
+  transform: scale(1.05);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #f06292;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: #777;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f06292;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: #d81b60;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+}
